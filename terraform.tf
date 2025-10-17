@@ -52,7 +52,7 @@ module "eks" {
     source  = "terraform-aws-modules/eks/aws"
     version = "~> 21.0"
 
-    name    = "example"
+    name    = "ismael-cluster"
     kubernetes_version = "1.33"
 
     # Optional
@@ -66,7 +66,7 @@ module "eks" {
         instance_types = ["t3.small"]
         min_size       = 1
         max_size       = 3
-        desired_size   = 2
+        desired_size   = 1
     }
     }
 
